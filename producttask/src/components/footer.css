@@ -1,0 +1,8 @@
+@media (max-width: 678px) {
+    .footer-nav{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+   
+}
