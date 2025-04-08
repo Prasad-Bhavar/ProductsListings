@@ -1,0 +1,154 @@
+ .card-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.contained-head{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    max-width: 1200px;
+    padding: 10px 5px;
+}
+
+
+.card-container {
+    width: 100%;
+    padding: 0px 2rem;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+    padding: 5px 5px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.get-more-btn {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 1rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.get-more-btn:hover {
+    background-color: #316cda;
+    box-shadow: 0 5px 10px gray;
+}
+.productTitle{
+    height: 3.7rem;
+    overflow: hidden;
+}
+/* .buttons{
+    
+    
+} */
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%; 
+        max-width: 300px; 
+    }
+}
+
+@media (min-width: 769px) {
+    .card {
+        width: 18rem; 
+    }
+}
+
+
+.card-data{
+    margin: 2rem 0.3rem;
+} 
+
+form.d-flex {
+    display: flex;
+    flex-wrap: wrap;          
+    justify-content: center;  
+    align-items: center;     
+    gap: 10px;                
+    margin: 20px auto;        
+    width: 100%;              
+    max-width: 700px;        
+    padding: 10px;           
+  }
+ 
+
+  form.d-flex input[type="search"] {
+    flex: 1;                      
+    padding: 8px;                 
+    font-size: 14px;              
+    border: 1px solid #ccc;       
+    border-radius: 4px;           
+    outline: none;                
+    width: 50%;                  
+    box-sizing: border-box;       
+  }
+  
+  /* Button styling */
+ 
+  
+  /* form.d-flex button[type="submit"]:hover {
+    background-color: #0056b3;    
+  }
+   */
+  
+  @media (max-width: 600px) {
+    form.d-flex {
+      flex-direction: column;   
+      gap: 5px;                  
+    }
+  
+    form.d-flex input[type="search"],
+    form.d-flex button[type="submit"] {
+      width: 100%;               
+    }
+  }
+  
+
+/* new styling */
+.add-to-cart{
+    border: 2px solid rgb(239, 63, 63);
+    border-radius: 10px;
+    background-color:  rgb(242, 53, 53);
+    transition: background-color 0.3s ease;
+    padding: 0.5rem;
+    /* width: 2rem; */
+}
+
+.add-to-cart:hover{
+    box-shadow: 0 5px 10px gray;
+    background-color: rgb(205, 0, 0);
+    color: white;
+}

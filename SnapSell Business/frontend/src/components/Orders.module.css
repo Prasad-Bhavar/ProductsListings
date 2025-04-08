@@ -1,0 +1,20 @@
+.orderPage {
+    padding: 2rem;
+  }
+
+  .orderTitle {
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(41, 65, 88);
+  }
+
+  .orderTitle > i{
+    font-size: 2rem;
+    color: rgb(41, 65, 88);
+  }
+
+  .loadingText {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+  }

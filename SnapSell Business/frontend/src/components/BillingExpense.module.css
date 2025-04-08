@@ -1,0 +1,121 @@
+/* General Styles */
+.cardBody {
+  display: flex;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  flex-wrap: wrap; /* Enable wrapping for responsiveness */
+}
+
+.billingDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  /* text-align: start; */
+  margin: 0.8rem 2rem 1rem;
+  width: 50%;
+  
+}
+
+.orderAddress {
+  width: 20%;
+  margin-left: 2rem;
+}
+
+.billingGst {
+  line-height: 1rem;
+}
+
+table, th, td {
+  text-align: left;
+}
+
+th, td {
+  padding: 0.3rem 3rem;
+}
+
+.totalRow {
+  margin: 5rem;
+  padding-top: 2rem !important;
+}
+
+.purchaseItemImage {
+  height: 250px;
+  width: 250px;
+  object-fit: cover; /* Ensures the image maintains aspect ratio */
+}
+
+.contactInput{
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.contactInput >input{
+  font-size: 1rem;
+  width: 80%;
+}
+.otpInput{
+  font-size: 1rem;
+  width: 80%;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .cardBody {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+  }
+
+  .billingDetails,
+  .orderAddress {
+    width: 80%;
+    margin: 1rem;
+  }
+
+  .purchaseItemImage {
+    height: 250px;
+    width: 400px;
+  }
+
+  th, td {
+    padding: 0.3rem 1.5rem; /* Reduce padding for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .billingDetails,
+  .orderAddress {
+    width: 100%;
+    margin: 0.5rem;
+  }
+
+  th, td {
+    padding: 0.2rem 1rem; /* Further reduce padding */
+  }
+
+  .purchaseItemImage {
+    height: 200px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardBody {
+    font-size: 1rem; /* Adjust font size for small screens */
+  }
+
+  .billingDetails,
+  .orderAddress {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  th, td {
+    padding: 0.1rem 0.5rem; /* Minimize padding */
+  }
+
+  .purchaseItemImage {
+    height: 150px;
+    width: 200px;
+  }
+}
